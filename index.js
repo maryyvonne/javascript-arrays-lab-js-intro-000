@@ -24,12 +24,12 @@ function appendKitten(name) {
   return name // returns ["Milo", "Otis", "Garfield", "Broom"]
 }
 function prependKitten(name) {
-  var name = ["Arnold", ...kittens]
-  return name
+  var name = ["Arnold", ...kittens] // adds "Arnold" to the beginning of kittens without modifying array
+  return name // returns ["Arnold", "Milo", "Otis", "Garfield"]
 }
 function removeLastKitten (name) {
-  return kittens.slice(0, kittens.length - 1)
+  return kittens.slice(0, kittens.length - 1) // returns ["Milo", "Otis"] without modifying array
 }
 function removeFirstKitten(name) {
-  return kittens.slice(1)
+  return kittens.slice(1) // returns ["Otis", "Garfield"] without modifying array
 }
